@@ -161,6 +161,8 @@ repeat customers rather than one-time buyers.
 ---
 
 ## Project structure
+
+```
 review-intelligence/
 └── frontend/
     ├── scripts/
@@ -170,8 +172,9 @@ review-intelligence/
     │   └── summary.json          # generated output (mirrored into public/)
     ├── public/
     │   └── summary.json          # runtime copy fetched by the dashboard
-    ├── src/                       # React + TypeScript dashboard
-    └── vercel.json                # static deployment config
+    ├── src/                      # React + TypeScript dashboard
+    └── vercel.json               # static deployment config
+```
 
 ## Running locally
 
