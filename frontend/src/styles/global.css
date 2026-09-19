@@ -1,0 +1,185 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --animate-retro-grid: retro-grid 20s linear infinite;
+  --animate-gradient: gradient 6s linear infinite;
+  --animate-moving-border: moving-border linear infinite;
+  --color-brand-from: var(--brand-from);
+  --color-brand-via: var(--brand-via);
+  --color-brand-to: var(--brand-to);
+}
+
+@keyframes retro-grid {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes gradient {
+  to { background-position: 200% center; }
+}
+
+@keyframes flow {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    left: 100%;
+    opacity: 0;
+  }
+}
+
+:root {
+  --background: #0b0e14;
+  --bg: #0b0e14;
+  --card: #131822;
+  --surface: #131822;
+  --border: rgba(255,255,255,0.09);
+  --muted-foreground: #7a8299;
+  --foreground: #e8eaed;
+  --text: #e8eaed;
+  --text-muted: #7a8299;
+  --brand: #ff5a36;
+  --brand-from: #ff5a36;
+  --brand-via: #ff8a5c;
+  --brand-to: #ffb08a;
+  --signal: #ff5a36;
+  --signal-glow: rgba(255, 90, 54, 0.45);
+  --grid-line: rgba(255,255,255,0.09);
+  --line: rgba(255,255,255,0.09);
+  --font-head: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* --- Signal Pipeline Component --- */
+.signal-pipeline-wrapper {
+  position: relative;
+  overflow: visible;
+  max-width: 680px;
+  margin: 48px 0;
+  z-index: 1;
+}
+
+.signal-pipeline {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  overflow: visible;
+}
+
+.pipe-node {
+  position: relative;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--card) 85%, white 4%);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  box-shadow:
+    6px 6px 14px rgba(0,0,0,0.5),
+    0 1px 0 rgba(255,255,255,0.04) inset;
+  transition: box-shadow 300ms, border-color 300ms;
+}
+
+.pipe-node:hover {
+  border-color: var(--brand-from);
+}
+
+.pipe-node.small {
+  width: 48px;
+  height: 48px;
+}
+
+.pipe-node.large {
+  width: 68px;
+  height: 68px;
+  box-shadow:
+    8px 8px 16px rgba(0,0,0,0.5),
+    -4px -4px 10px rgba(255,255,255,0.02),
+    0 1px 0 rgba(255,255,255,0.04) inset;
+}
+
+.pipe-node svg {
+  stroke: var(--text-muted);
+  width: 20px;
+  height: 20px;
+}
+
+.pipe-node.large svg {
+  stroke: var(--text);
+  width: 26px;
+  height: 26px;
+}
+
+.pipe-line {
+  position: relative;
+  width: 140px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--line), rgba(255,255,255,0.22), var(--line));
+  overflow: visible;
+}
+
+.flowing-dot {
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--brand-via);
+  box-shadow: 0 0 12px var(--brand-via), 0 0 4px var(--brand-from);
+  pointer-events: none;
+  z-index: 4;
+}
+
+.pipe-label {
+  position: absolute;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.pipe-label.signal-label {
+  color: var(--signal);
+}
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-from: var(--brand-from);
+  --color-brand-via: var(--brand-via);
+  --color-brand-to: var(--brand-to);
+  --animate-moving-border: moving-border var(--mb-duration, 4s) linear infinite;
+  @keyframes moving-border {
+  from {
+    offset-distance: 0%;
+    }
+  to {
+    offset-distance: 100%;
+    }
+  }
+}
+
+.dark {
+  --brand: oklch(0.623 0.214 260);
+  --brand-from: oklch(0.623 0.214 260);
+  --brand-via: oklch(0.707 0.165 255);
+  --brand-to: oklch(0.746 0.16 233);
+}

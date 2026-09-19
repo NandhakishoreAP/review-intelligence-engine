@@ -1,0 +1,289 @@
+{
+  "total_ltv_at_risk": 22317621.17,
+  "total_reviews": 5000,
+  "affected_reviews": 2444,
+  "issues": [
+    {
+      "tag": "customer_service",
+      "count": 586,
+      "pct": 11.72,
+      "avg_rating": 1.63,
+      "ltv_at_risk": 5656808.86,
+      "systemic": true
+    },
+    {
+      "tag": "no_results",
+      "count": 564,
+      "pct": 11.28,
+      "avg_rating": 1.59,
+      "ltv_at_risk": 5137360.58,
+      "systemic": true
+    },
+    {
+      "tag": "packaging_damage",
+      "count": 563,
+      "pct": 11.26,
+      "avg_rating": 1.65,
+      "ltv_at_risk": 5207430.35,
+      "systemic": true
+    },
+    {
+      "tag": "product_quality",
+      "count": 562,
+      "pct": 11.24,
+      "avg_rating": 1.64,
+      "ltv_at_risk": 4935044.58,
+      "systemic": true
+    },
+    {
+      "tag": "wrong_product",
+      "count": 560,
+      "pct": 11.2,
+      "avg_rating": 1.63,
+      "ltv_at_risk": 5203308.74,
+      "systemic": true
+    },
+    {
+      "tag": "delivery_delay",
+      "count": 558,
+      "pct": 11.16,
+      "avg_rating": 1.61,
+      "ltv_at_risk": 4972332.7,
+      "systemic": true
+    },
+    {
+      "tag": "pricing_concern",
+      "count": 554,
+      "pct": 11.08,
+      "avg_rating": 1.65,
+      "ltv_at_risk": 5201254.37,
+      "systemic": true
+    },
+    {
+      "tag": "side_effects",
+      "count": 551,
+      "pct": 11.02,
+      "avg_rating": 1.65,
+      "ltv_at_risk": 5087039.8,
+      "systemic": true
+    }
+  ],
+  "sample_reviews": {
+    "customer_service": [
+      {
+        "review_text": "Bot keeps replying same thing. Waste of money. ",
+        "rating": 2,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Coupon didn't apply. Bot keeps replying same thing. Received different variant. ",
+        "rating": 1,
+        "product": "Body Wash 300ml"
+      },
+      {
+        "review_text": "Expired product received. Replacement took too long. ",
+        "rating": 1,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Agent was rude. Waste of money. ",
+        "rating": 1,
+        "product": "Hair Growth Serum"
+      },
+      {
+        "review_text": "Replacement took too long. Received different variant. Label peeled off. ",
+        "rating": 2,
+        "product": "Hair Mask Deep Repair"
+      }
+    ],
+    "no_results": [
+      {
+        "review_text": "Bot keeps replying same thing. Waste of money. ",
+        "rating": 2,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "No visible improvement. ",
+        "rating": 2,
+        "product": "Beard Growth Oil"
+      },
+      {
+        "review_text": "Missing items in bundle. Waste of money. ",
+        "rating": 1,
+        "product": "Skin Brightening Serum"
+      },
+      {
+        "review_text": "Agent was rude. Waste of money. ",
+        "rating": 1,
+        "product": "Hair Growth Serum"
+      },
+      {
+        "review_text": "No visible improvement. Different brand received. Price increased since last order. ",
+        "rating": 2,
+        "product": "Sleep Gummies 30ct"
+      }
+    ],
+    "pricing_concern": [
+      {
+        "review_text": "Coupon didn't apply. Bot keeps replying same thing. Received different variant. ",
+        "rating": 1,
+        "product": "Body Wash 300ml"
+      },
+      {
+        "review_text": "Texture changed from last order. Too expensive for quantity. ",
+        "rating": 2,
+        "product": "Acne Control Face Wash"
+      },
+      {
+        "review_text": "No visible improvement. Different brand received. Price increased since last order. ",
+        "rating": 2,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Decent but overpriced. Found cheaper on another site.",
+        "rating": 3,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Missing items in bundle. Coupon didn't apply. Stomach upset from supplements. ",
+        "rating": 2,
+        "product": "Hair Mask Deep Repair"
+      }
+    ],
+    "wrong_product": [
+      {
+        "review_text": "Coupon didn't apply. Bot keeps replying same thing. Received different variant. ",
+        "rating": 1,
+        "product": "Body Wash 300ml"
+      },
+      {
+        "review_text": "Weak concentration. Received someone else's order. ",
+        "rating": 2,
+        "product": "Hair Growth Serum"
+      },
+      {
+        "review_text": "Missing items in bundle. Waste of money. ",
+        "rating": 1,
+        "product": "Skin Brightening Serum"
+      },
+      {
+        "review_text": "Bottle leaked during shipping. Received different variant. ",
+        "rating": 1,
+        "product": "Weight Loss Shake"
+      },
+      {
+        "review_text": "Weak concentration. Received different variant. Seal was broken. ",
+        "rating": 2,
+        "product": "Skin Brightening Serum"
+      }
+    ],
+    "product_quality": [
+      {
+        "review_text": "Weak concentration. Received someone else's order. ",
+        "rating": 2,
+        "product": "Hair Growth Serum"
+      },
+      {
+        "review_text": "Texture changed from last order. Too expensive for quantity. ",
+        "rating": 2,
+        "product": "Acne Control Face Wash"
+      },
+      {
+        "review_text": "Expired product received. Replacement took too long. ",
+        "rating": 1,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Weak concentration. Received different variant. Seal was broken. ",
+        "rating": 2,
+        "product": "Skin Brightening Serum"
+      },
+      {
+        "review_text": "Received different variant. Marked delivered but not received. Color looks different. ",
+        "rating": 1,
+        "product": "Iron + B12 Tabs"
+      }
+    ],
+    "packaging_damage": [
+      {
+        "review_text": "Bottle leaked during shipping. ",
+        "rating": 2,
+        "product": "Multivitamin Tabs 90ct"
+      },
+      {
+        "review_text": "Bottle leaked during shipping. Received different variant. ",
+        "rating": 1,
+        "product": "Weight Loss Shake"
+      },
+      {
+        "review_text": "Weak concentration. Received different variant. Seal was broken. ",
+        "rating": 2,
+        "product": "Skin Brightening Serum"
+      },
+      {
+        "review_text": "Replacement took too long. Received different variant. Label peeled off. ",
+        "rating": 2,
+        "product": "Hair Mask Deep Repair"
+      },
+      {
+        "review_text": "Color looks different. Bottle leaked during shipping. Allergic reaction on scalp. ",
+        "rating": 2,
+        "product": "Vitamin C Moisturizer"
+      }
+    ],
+    "side_effects": [
+      {
+        "review_text": "Works but slowly. Hair fall increased initially.",
+        "rating": 3,
+        "product": "Hair Mask Deep Repair"
+      },
+      {
+        "review_text": "Color looks different. Bottle leaked during shipping. Allergic reaction on scalp. ",
+        "rating": 2,
+        "product": "Vitamin C Moisturizer"
+      },
+      {
+        "review_text": "Missing items in bundle. Coupon didn't apply. Stomach upset from supplements. ",
+        "rating": 2,
+        "product": "Hair Mask Deep Repair"
+      },
+      {
+        "review_text": "Allergic reaction on scalp. Coupon didn't apply. Expected faster results. ",
+        "rating": 2,
+        "product": "Anti-Hairfall Oil 200ml"
+      },
+      {
+        "review_text": "It's okay, nothing special. Allergic reaction on scalp.",
+        "rating": 3,
+        "product": "Skin Brightening Serum"
+      }
+    ],
+    "delivery_delay": [
+      {
+        "review_text": "Received different variant. Marked delivered but not received. Color looks different. ",
+        "rating": 1,
+        "product": "Iron + B12 Tabs"
+      },
+      {
+        "review_text": "Waste of money. Missing items in bundle. Delivered to wrong address. ",
+        "rating": 2,
+        "product": "Hair Growth Serum"
+      },
+      {
+        "review_text": "Delivered to wrong address. ",
+        "rating": 2,
+        "product": "Sleep Gummies 30ct"
+      },
+      {
+        "review_text": "Wrong delivery date shown. Bot keeps replying same thing. ",
+        "rating": 2,
+        "product": "Beard Growth Oil"
+      },
+      {
+        "review_text": "Stuck in transit for a week. No response to complaint. ",
+        "rating": 1,
+        "product": "Minoxidil 5% Solution"
+      }
+    ]
+  }
+}
