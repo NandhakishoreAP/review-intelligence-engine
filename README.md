@@ -90,9 +90,9 @@ represents a much larger loss than a ₹500 first-time buyer having the same
 experience.
 
 ```bash
-cd frontend
+cd frontend/scripts
 python3 analyze.py            # prints the full breakdown to the terminal
-python3 generate_summary.py   # writes summary.json, consumed by the dashboard
+python3 generate_summary.py   # writes summary.json to frontend/public/, consumed by the dashboard
 ```
 
 <details>
@@ -163,12 +163,15 @@ repeat customers rather than one-time buyers.
 ## Project structure
 review-intelligence/
 └── frontend/
-├── analyze.py # core analysis logic, prints results
-├── generate_summary.py # writes summary.json for the dashboard
-├── cx_reviews.json # the provided dataset
-├── summary.json # precomputed output, fetched by the UI
-├── src/ # React + TypeScript dashboard
-└── vercel.json # static deployment config
+    ├── scripts/
+    │   ├── analyze.py            # core analysis logic, prints results
+    │   ├── generate_summary.py   # writes summary.json for the dashboard
+    │   ├── cx_reviews.json       # the provided dataset
+    │   └── summary.json          # generated output (mirrored into public/)
+    ├── public/
+    │   └── summary.json          # runtime copy fetched by the dashboard
+    ├── src/                       # React + TypeScript dashboard
+    └── vercel.json                # static deployment config
 
 ## Running locally
 
